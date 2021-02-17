@@ -1,0 +1,188 @@
+.ProfileSummaryDashBoard{
+    display: inline-block;
+    margin-top: 4px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.particuler_profile_main{
+    align-self: center;
+    width: 96%;
+    display:block;
+    background-color: rgba(220, 223, 191, 0.397);
+    margin-bottom: 1.1rem;
+    padding-top: 0px;
+    margin-left: 2%;
+}
+.particuler_profile_name{
+    width: 96%;
+    display: block;
+    padding: 1.1rem;
+    padding-right: 0px;
+    font-size: 24px;
+    color: rgba(0, 0, 255, 0.726);
+}.profile_data{
+    display: flex;
+    padding: 1.1rem;
+    padding-bottom: .7rem;
+    flex-direction: column;
+    padding-right: 0px;
+    background-color: rgba(220, 223, 191, 0.644);
+    margin: 0px;
+}.heading_tests{
+    display: block;
+    width:100%;
+    padding-bottom: 7px;
+}.test_name_head{
+    display: inline-block;
+    width: 42%;
+    padding-left: 1.8rem;
+}.result_head{
+    display: inline-block;
+    width: 40%;
+}.normal_range_head{
+    display: inline-block;
+}
+._tests{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    width:100%;
+    font-weight:400
+}.test_name_{
+    display: inline-flex;
+    width: 44%;
+    padding-left: .7rem;
+}.result_{
+    display: inline-block;
+    width: 40%;
+}.normal_range_{
+    display: inline-block;
+}@media(max-width:940px){
+    .test_name_head{
+        display: inline-block;
+        width: 38%;
+        padding-left: 1.8rem;
+    }.result_head{
+        display: inline-block;
+        width: 36%;
+    }
+    .test_name_{
+        display: inline-flex;
+        width: 40%;
+        padding-left: .7rem;
+    }.result_{
+        display: inline-block;
+        width: 36%;
+    }
+}@media(max-width:915px){
+    ._tests{
+        /* display: none; */
+    }
+    .test_name_head{
+        display: inline-block;
+        width: 38%;
+        padding-left: 1.8rem;
+    }.result_head{
+        display: inline-block;
+        width: 36%;
+    }
+    .test_name_{
+        display: inline-flex;
+        width: 41%;
+        padding-left: .7rem;
+    }.result_{
+        display: inline-block;
+        width: 37%;
+    }
+}@media(max-width:700px){
+    ._tests{
+        /* display: none; */
+    }
+    .test_name_head{
+        display: inline-block;
+        width: 34%;
+        padding-left: 1.8rem;
+    }.result_head{
+        display: inline-block;
+        width: 32%;
+    }
+    .test_name_{
+        display: inline-flex;
+        width: 38%;
+        padding-left: .7rem;
+    }.result_{
+        display: inline-block;
+        width: 33%;
+    }
+}@media(max-width:490px){
+    ._tests{
+        /* display: none; */
+    }.profile_data{
+        padding-left: 0px;
+    }
+    .test_name_head{
+        display: inline-block;
+        width: 32%;
+        padding-left: 30px;
+    }.result_head{
+        display: inline-block;
+        width: 30%;
+    }
+    .test_name_{
+        display: inline-flex;
+        width: 37.5%;
+        padding-left: 10px;
+        padding-right: 4px;
+    }.result_{
+        display: inline-block;
+        width: 31%;
+    }
+}@media(max-width:390px){
+    ._tests{
+        /* display: none; */
+    }.profile_data{
+        padding-left: 0px;
+    }
+    .test_name_head{
+        display: inline-block;
+        width: 30%;
+        padding-left: 23px;
+    }.result_head{
+        display: inline-block;
+        width: 30%;
+    }
+    .test_name_{
+        display: inline-flex;
+        width: 35%;
+        padding-left: 8px;
+        padding-right: 4px;
+    }.result_{
+        display: inline-block;
+        width: 31%;
+    }
+}@media(max-width:355px){
+    ._tests{
+        /* display: none; */
+    }
+    .test_name_head{
+        display: inline-block;
+        width: 28%;
+        padding-left: 23px;
+    }.result_head{
+        display: inline-block;
+        width: 30%;
+    }
+    .test_name_{
+        display: inline-flex;
+        width: 33%;
+        padding-left: 8px;
+        padding-right: 4px;
+    }.result_{
+        display: inline-block;
+        width: 31%;
+    }
+}

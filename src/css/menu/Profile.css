@@ -1,0 +1,114 @@
+.main_profile{
+    display: flex;
+    width: 94%;
+    font-family: 'Kanit', sans-serif;
+    background-color: rgba(238, 255, 0, 0.397);
+    margin: 2%;
+    margin-top: 1%;
+    padding: 13px;
+    flex-direction: row;
+}
+.entities{
+    display: inline-block;
+    width: 35%;
+    /* overflow-y: scroll; */
+}
+.entities1{
+    display: inline-block;
+    width: 28%;
+    /* overflow-y: scroll; */
+}.entities2{
+    display: inline-block;
+    width: 28%;
+    /* overflow-y: scroll; */
+}
+.firstHead{
+    margin: 0px;
+    padding: 0px;
+    margin-left:6%;
+}.afterHead{
+    margin-left: 15%;
+    margin-top: 5px;
+}
+.imgUser{
+    border-radius: 50%;
+}
+@media(max-width:900px){
+    .main_profile{
+        margin-left: 1%;
+    }
+    .entities{
+        width:40%;
+    }.entities1{
+        width: 23%;
+    }.entities2{
+        width: 29%;
+    }
+    .afterHead{
+        margin-left: 6px;
+    }
+}@media(max-width:780px){
+    .main_profile{
+        display: flex;
+        margin: 2%;
+        margin-top: 1%;
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        width: 65%;
+        margin-left: 17%;
+        flex-direction: column;
+    }.firstHead{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .imgUser{
+        width: 80px;
+        align-self: center;
+    }
+    .entities{
+        display: block;
+        width:100%;
+        
+    }.entities1{
+        display: block;
+        width:100%;
+       
+    }.entities2{
+        display: block;
+        width:100%;
+        
+    }
+    .afterHead{
+        margin-left: 6px;
+    }
+}
+@media(max-width:500px){
+    .main_profile{
+        
+        width: 94%;
+        margin-left: 3%;
+    }
+    .imgUser{
+        width: 80px;
+    }
+    .entities{
+        display: block;
+        width:100%;
+        overflow-y: unset;
+    }.entities1{
+        display: block;
+        width:100%;
+        overflow-y: unset;
+    }.entities2{
+        display: block;
+        width:100%;
+        overflow-y: unset;
+    }
+    .afterHead{
+        margin-left: 6px;
+    }
+}.main_profile{
+    margin-bottom: 5px;
+}

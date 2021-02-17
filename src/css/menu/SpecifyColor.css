@@ -1,0 +1,25 @@
+.colorSpecifyMain{
+    margin:10px;
+   font-style: normal;
+   font: 100;
+    display: flexbox;
+    margin-left: 2%;
+    width: 96%;
+    text-align: right;
+    flex-direction: row;
+    margin-bottom: 0px;
+}.specify_one{
+    display: inline-flex;
+    flex-direction: row;
+    font-style: normal;
+    font-size: 17px;
+    margin-right: 6px;
+}
+@media(max-width:400px){
+    .colorSpecifyMain{
+        text-align: left;
+    }
+}.colorSpecifyMain{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}

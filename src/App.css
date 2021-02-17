@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+.body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #5e585821;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(48, 44, 44);
+}
+
+@media(min-width:100px){
+  .main_div{
+    width: 100%;
+    display: inline-block;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .left_nav{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .display_comp{
+    display: inline-block;
+    width:  100%;
   }
-}
+  .right_cards{
+    display: inline-block;
+    width:  100%;
+  }
+  
+}@media(min-width:1550px){
+  .main_div{
+    width: 100%;
+    display: flex;
+  }
+  .left_nav{
+    display: inline-block;
+    height: 100vh;
+    width: 15%;
+    overflow-y: scroll;
+    background-color: rgba(0, 255, 255, 0.055);
+    position: static;
+  }
+  .display_comp{
+    display: inline-block;
+    height: 100vh;
+    overflow-y: scroll;
+    width:  68%;
+  }
+  .right_cards{
+    display: inline-block;
+    height: 100vh;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    
+    width:  17%;
+  }}

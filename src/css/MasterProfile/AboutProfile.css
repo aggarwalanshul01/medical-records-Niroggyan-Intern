@@ -1,0 +1,31 @@
+.about_main{
+    display: block;
+    width: 96%;
+    margin-left:2% ;
+    margin-top: 1%;
+    /* background-color: azure; */
+}
+.about_top{
+    display: flexbox;
+}
+.about_head{
+    display: inline;
+    padding: 10px;
+    padding-right: 2px;
+    font-size: 35px;
+    color: rgb(19, 76, 233);
+}.about_button{
+    outline: none;
+    text-decoration: none;
+    border: none;
+    background: none;
+    padding: 6px;
+}
+.about_data{
+    padding: 10px;
+    padding-top: 6px;
+    font-size: 18px;
+    color: rgb(3, 0, 0);
+}.not_display_About{
+    display: none;
+}

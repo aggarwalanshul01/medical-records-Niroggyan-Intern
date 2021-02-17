@@ -1,0 +1,26 @@
+.icon{
+    font-size: 2px;
+    margin-right: 7px;
+    color: lightgray;
+    opacity: 0.6;
+    
+}.menu{
+    color: rgb(27, 20, 20);
+}.span_main{
+    
+    padding-top: 4px;
+    padding-left: 2.4rem;
+}
+.span_main:hover .icon{
+    color: blue;
+}.span_main:hover .menu{
+    color: blue;
+}
+.navlink_normal{
+    text-decoration: none;
+}
+.navlink_active .icon{
+    color: blue;
+}.navlink_active .menu{
+    color: blue;
+}

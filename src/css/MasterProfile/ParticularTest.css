@@ -1,0 +1,191 @@
+.ParticularTest_main{
+    background-color: rgba(220, 223, 191, 0.397);
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    padding-top: 9px;
+}
+.ParticularTest_head{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    color: black;
+}
+.ParticularTest_name{
+    display: inline-block;
+    width: 85%;
+    font-size: 23px;
+    font-weight: 600;
+}.ParticularTest_status{
+    display: inline;
+    font-size: 17px;
+}
+.ParticularTest_status_short{
+    display: none;
+    font-size: 17px;
+}
+.graph_representation{
+    width: 100%;
+    margin-top: 30px;
+}.graph_test{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    
+    margin-bottom: 30px;
+    font-size: 13px;
+}.low_three{
+    display: inline-block;
+    width: 32.5%;
+    margin-right:1% ;
+}.normal_three{
+    display: inline-block;
+    width: 32.5%;
+    margin-right:1% ;
+}.high_three{
+    display: inline-block;
+    width: 32.5%;
+}.normal_two{
+    display: inline-block;
+    width: 49.5%;
+    margin-right:1% ;
+}.high_two{
+    display: inline-block;
+    width: 49%;
+}
+
+.low_three_graph{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: red;
+    color: honeydew;
+    font-size: 15px;
+    /* border-left: hsl(hue, saturation, lightness); */
+    
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+}.normal_three_graph{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: green;
+    color: honeydew;
+    font-size: 15px;
+}.high_three_graph{
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: red;
+    color: honeydew;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}.normal_two_graph{
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: green;
+    color: honeydew;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+}.high_two_graph{
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: red;
+    color: honeydew;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}.data_when_short{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: whitesmoke;
+    border-top: 2px solid grey;
+
+}.show_data{
+    display: block;
+}.Particular_test_status_down_one{
+    display: inline-block;
+    width: 90%;
+    padding-top: 5px;
+}.buttonClose_down{
+    text-decoration: none;
+    color: red;
+    
+}
+
+.Particular_test_status_down{
+    padding : 10px;
+    padding-bottom: 0px; 
+    display: flex;
+}.test_description_down{
+    padding: 10px;
+    padding-top: 5px;
+}.graph_representation_down{
+    margin-top: 0px;
+}
+
+.low_three_graph:hover{
+    box-shadow:2px 2px 20px red;
+}.normal_three_graph:hover{
+    box-shadow:2px 2px 20px green;
+}.high_three_graph:hover{
+    box-shadow:2px 2px 20px red;
+}.normal_two_graph:hover{
+    box-shadow:2px 2px 20px green;
+}.high_two_graph:hover{
+    box-shadow:2px 2px 20px red;
+}
+@media(max-width:1000px){
+    .ParticularTest_name{
+        width: 80%;
+    }.graph_test{
+        width: 90%;
+        margin-left:5% ;
+    }
+}@media(max-width:760px){
+    /* .ParticularTest_main{
+        display: none;
+    } */
+    .ParticularTest_name{
+        width: 75%;
+    }.graph_test{
+        width: 95%;
+        margin-left:2.5% ;
+    }
+}@media(max-width:600px){
+    
+    .ParticularTest_name{
+        width: 95%;
+    }.test_description{
+        display: none;
+    }
+    
+    .ParticularTest_status{
+        display: none;
+    }.ParticularTest_status_short{
+        display: inline;
+    }
+    
+    .graph_test{
+        width: 95%;
+        margin-left:2.5% ;
+    }
+}@media(max-width:549px){
+    .ParticularTest_name{
+        width: 93%;
+    }
+}@media(max-width:420px){
+    .ParticularTest_name{
+        width: 90%;
+        font-size: 20px;
+        
+    }
+}
