@@ -19,7 +19,7 @@
     display: none;
     z-index: 50;
     padding: 0px;
-    width: 250px;
+    width: 260px;
     animation: menu 0.5s;
 }
 .open_nav{

@@ -10,13 +10,20 @@ import Contents from './contents';
 import CancelIcon from '@material-ui/icons/Cancel';
 import Tests from '../JsonPassed/Tests';
 import ComputerIcon from '@material-ui/icons/Computer';
+import {TEST_DATABASE, TEST_DATABASE_MAPPING, DIC} from '../JsonPassed/testsDatabase';
+import testsOriginal from '../JsonPassed/curTestCopy';
 
 const icon=[<DashboardIcon/>,<LocalHospitalIcon/>]
 const menu=['Dashboard','All Profiles'];
-const profiles=[];
-for(let i=0;i<Tests.length;i++){
-    profiles.push(Tests[i].profileName);
+
+const profiles=[],map={};
+for(let i=0;i< testsOriginal.length;i++){
+    if(!map[DIC[TEST_DATABASE_MAPPING[testsOriginal[i].TestName]]]){
+    profiles.push(DIC[TEST_DATABASE_MAPPING[testsOriginal[i].TestName]]);
+    map[DIC[TEST_DATABASE_MAPPING[testsOriginal[i].TestName]]]=1;
+    }
 }
+
 console.log(profiles);
 
 function Navbar(props) {
@@ -31,9 +38,9 @@ function Navbar(props) {
                 <img  src='./img/logo.jpg' alt='logo' width='150px'/>
             </div>
             <div className='content_1'>
-                <h3 className ='heading_med'>MEDICINE</h3>
-                <Contents icon={()=>icon[0]} menu={menu[0]} to=''/>
-                {(Tests.length==0)?null:<Contents icon={()=>icon[1]} menu={menu[1]} to={menu[1]}/>}
+                <h3 className ='heading_med'>{(props.Lang=='eng')? <span>COMPONENTS</span> : <span>अवयव</span>}</h3>
+                <Contents icon={()=>icon[0]} menu={(props.Lang=='eng')?'DASHBOARD' : 'DASHBOARD'} to=''/>
+                {(Tests.length==0)?null:<Contents icon={()=>icon[1]} menu={(props.Lang=='eng')?'All Profiles' : 'All Profiles'} to={menu[1]}/>}
                 {profiles.map((i,index)=>{
                     let to=i;
                     

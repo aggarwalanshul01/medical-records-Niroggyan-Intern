@@ -41,7 +41,7 @@
         display: inline;
         text-align: center;
     }
-}@media(max-width:700px){
+}@media(max-width:1000px){
     .search{
         width: 30%;
     }
@@ -71,7 +71,7 @@
         display: inline;
         text-align: centre;
     }
-}@media(max-width:474px){
+}@media(max-width:650px){
     .search{
         width: 70%;
     }

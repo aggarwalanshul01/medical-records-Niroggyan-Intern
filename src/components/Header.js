@@ -6,7 +6,7 @@ import "../css/Header.css";
 
 
 
-function Header() {
+function Header(props) {
     const [classMain, setclassMain] = useState('nav_full');
     const [scrollHeader, setscrollHeader] = useState('H')
     const navCut=()=>{
@@ -25,7 +25,7 @@ function Header() {
     return (
         <div className={scrollHeader}>
         <div className={classMain}>
-                <Navbar crossBut={navCut}/>
+                <Navbar crossBut={navCut} Lang={props.Lang}/>
         </div>
         <div className='main_head'>
             
@@ -35,7 +35,7 @@ function Header() {
             </div>
             
             <div className='contents'>
-                <MidHeader/>
+                <MidHeader engtohindi={props.engtohindi} hinditoeng={props.hinditoeng}/>
             </div>
         </div>
         </div>

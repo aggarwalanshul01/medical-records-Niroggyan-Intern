@@ -4,16 +4,21 @@ import NamesWithAbout from '../../data/ProfileNames';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import Button from '@material-ui/core/Button';
+import AboutProfiles from "../../JsonPassed/AboutProfiles";
 
 function AboutUs(props) {
     const [one, setone] = useState(0);
 
     let getAbout=()=>{
-        for(let i=0;i<NamesWithAbout.length;i++){
-            if(NamesWithAbout[i].name==props.prof){
-                return NamesWithAbout[i].about;
-            }
+        if(!AboutProfiles[props.prof]){
+            return 
         }
+        if(props.Lang=='hindi'&&AboutProfiles[props.prof].hindi)
+            return AboutProfiles[props.prof].hindi;
+        else if(AboutProfiles[props.prof].en){
+            return AboutProfiles[props.prof].en;
+        }
+            
     }
     let classes='about_data';
     let getComp=()=>{

@@ -47,7 +47,7 @@
   .left_nav{
     display: inline-block;
     height: 100vh;
-    width: 15%;
+    width: 16.5%;
     overflow-y: scroll;
     background-color: rgba(0, 255, 255, 0.055);
     position: static;
@@ -56,7 +56,7 @@
     display: inline-block;
     height: 100vh;
     overflow-y: scroll;
-    width:  68%;
+    width:  66.5%;
   }
   .right_cards{
     display: inline-block;

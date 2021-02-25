@@ -12,24 +12,35 @@ export default function OutlinedCard(props) {
     const clickedLink=()=>{
         window.open(props.post.link);
     }
+    //console.log("))))"+props.Lang);
+    const getTitle=()=>{
+      if(props.Lang=='hindi'&&props.post.title.hindi){
+        return props.post.title.hindi
+      }return props.post.title.en
+    }
+    const getDescription=()=>{
+      if(props.Lang=='hindi'&&props.post.description.hindi){
+        return props.post.description.hindi
+      }return props.post.description.en
+    }
   return (
       
     <Card variant="outlined">
       <CardContent>
         <img src={props.post.imgLink} width='230'/>
         <Typography variant="h5" component="h2">
-          {props.post.title}
+          {getTitle()}
         </Typography>
         
         <Typography variant="body2" component="p">
-        {props.post.description}
+          {getDescription()}
           <br />
           {'"a benevolent smile"'}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small" onClick={clickedLink}>Learn More <ArrowRightAltIcon/></Button>
-      </CardActions>
+      
+        <Button size="small" onClick={clickedLink} style={{zIndex:'1',position:'static', marginLeft:'14px',marginBottom:'10px'}}>Learn More <ArrowRightAltIcon/></Button>
+      
     </Card>
   );
 }

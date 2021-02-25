@@ -52,24 +52,111 @@
 }.high_two{
     display: inline-block;
     width: 49%;
+}.low_five1{
+    display: inline-block;
+    width: 19%;
+    margin-right:1% ;
+}.low_five2{
+    display: inline-block;
+    width: 19%;
+    margin-right:1% ;
+}.low_five3{
+    display: inline-block;
+    width: 19%;
+    margin-right:1% ;
+}.low_five4{
+    display: inline-block;
+    width: 19%;
+    margin-right:1% ;
+}.low_five5{
+    display: inline-block;
+    width: 19%;
+    margin-right:1% ;
 }
-
+.low_four1{
+    display: inline-block;
+    width: 24%;
+    margin-right:1% ;
+}.low_four2{
+    display: inline-block;
+    width: 24%;
+    margin-right:1% ;
+}.low_four3{
+    display: inline-block;
+    width: 24%;
+    margin-right:1% ;
+}.low_four4{
+    display: inline-block;
+    width: 24%;
+    margin-right:1% ;
+}
+.normal_five_graph_start{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    
+    color: honeydew;
+    font-size: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}.normal_five_graph{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    
+    color: honeydew;
+    font-size: 15px;
+}.normal_five_graph_end{
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    color: honeydew;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.normal_four_graph_start{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    
+    color: honeydew;
+    font-size: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}.normal_four_graph{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    
+    color: honeydew;
+    font-size: 15px;
+}.normal_four_graph_end{
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    color: honeydew;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
 .low_three_graph{
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: center;
-    background-color: red;
+    background-color: #DB4437;
+    
     color: honeydew;
     font-size: 15px;
-    /* border-left: hsl(hue, saturation, lightness); */
-    
-    border-top-left-radius: 20%;
-    border-bottom-left-radius: 20%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }.normal_three_graph{
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: center;
-    background-color: green;
+    background-color: #0F9D58;
     color: honeydew;
     font-size: 15px;
 }.high_three_graph{
@@ -77,28 +164,28 @@
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: center;
-    background-color: red;
+    background-color: #DB4437;
     color: honeydew;
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }.normal_two_graph{
     font-size: 15px;
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: center;
-    background-color: green;
+    background-color: #0F9D58;
     color: honeydew;
-    border-top-left-radius: 20%;
-    border-bottom-left-radius: 20%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }.high_two_graph{
     font-size: 15px;
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: center;
-    background-color: red;
+    background-color: #DB4437;
     color: honeydew;
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }.data_when_short{
     display: none;
     position: fixed;
@@ -132,17 +219,7 @@
     margin-top: 0px;
 }
 
-.low_three_graph:hover{
-    box-shadow:2px 2px 20px red;
-}.normal_three_graph:hover{
-    box-shadow:2px 2px 20px green;
-}.high_three_graph:hover{
-    box-shadow:2px 2px 20px red;
-}.normal_two_graph:hover{
-    box-shadow:2px 2px 20px green;
-}.high_two_graph:hover{
-    box-shadow:2px 2px 20px red;
-}
+
 @media(max-width:1000px){
     .ParticularTest_name{
         width: 80%;
@@ -159,6 +236,7 @@
     }.graph_test{
         width: 95%;
         margin-left:2.5% ;
+        
     }
 }@media(max-width:600px){
     

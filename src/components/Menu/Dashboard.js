@@ -5,20 +5,20 @@ import Summary from './Summary';
 import SpecifyColor from "./SpecifyColor";
 import ProfileSummaryDashBoard from "./ProfileSummaryDashBoard";
 
-function Dashboard() {
+function Dashboard(props) {
     return (
         <div>
             <div>
-                <Profile/>
+                <Profile Lang={props.Lang}/>
             </div>
             <div>
-                <Summary/>
+                <Summary Lang={props.Lang}/>
             </div>
             <div>
-                <SpecifyColor/>
+                <SpecifyColor Lang={props.Lang}/>
             </div>
             <div>
-                <ProfileSummaryDashBoard/>
+                <ProfileSummaryDashBoard Lang={props.Lang}/>
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import Post from "../JsonPassed/RecentPosts";
 import ParticularPost from "./ParticularPost";
 
 
-function Posts() {
+function Posts(props) {
     console.log(Post);
     return (
         <div>
@@ -16,7 +16,7 @@ function Posts() {
                             
                     }
                     } key={post.id} >
-                        <ParticularPost post={post}/>
+                        <ParticularPost post={post} Lang={props.Lang}/>
                      </li>
                 })}
             
