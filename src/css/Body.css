@@ -1,0 +1,14 @@
+.main_bodym{
+    margin-top:110px;
+    
+}
+@media(max-width:650px){
+    .main_bodym{
+        margin-top:180px;
+    } 
+}@media(max-width:450px){
+    .main_bodym{
+        /* display: none; */
+        margin-top:170px;
+    }
+}

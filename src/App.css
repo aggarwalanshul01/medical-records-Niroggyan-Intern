@@ -57,6 +57,7 @@
     height: 100vh;
     overflow-y: scroll;
     width:  66.5%;
+    
   }
   .right_cards{
     display: inline-block;
@@ -66,3 +67,8 @@
     
     width:  17%;
   }}
+
+  .main_bodym{
+    margin-top:'110px';
+    
+}

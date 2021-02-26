@@ -7,6 +7,7 @@ import Tests from '../JsonPassed/Tests';
 import AllProfiles from "./MasterProfile/AllProfiles";
 import { TEST_DATABASE, TEST_DATABASE_MAPPING, DIC } from "../JsonPassed/testsDatabase";
 import testsOriginal from '../JsonPassed/curTestCopy';
+import '../css/Body.css';
 
 const profiles=[],map={};
 for(let i=0;i< testsOriginal.length;i++){
@@ -20,7 +21,7 @@ for(let i=0;i< testsOriginal.length;i++){
 function Body(props) {
     // console.log("lang body="+ props.Lang);
     return (
-        <div>
+        <div className='main_bodym' >
             <Switch >
                 {profiles.map((i,index)=>{
                     console.log(i);

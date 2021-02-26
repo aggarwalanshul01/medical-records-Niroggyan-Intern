@@ -23,7 +23,7 @@ function Header(props) {
         window.addEventListener('scroll', listenScrollEvent)
     }, [scrollHeader]);
     return (
-        <div className={scrollHeader}>
+        <div className='header_main_sticky'>
         <div className={classMain}>
                 <Navbar crossBut={navCut} Lang={props.Lang}/>
         </div>

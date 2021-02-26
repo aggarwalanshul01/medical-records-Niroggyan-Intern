@@ -1,7 +1,8 @@
 .header_main_sticky{
     position: fixed;
-    width: 100%;
+    width: 66%;
     margin: 0px;
+    height: 90px;
     top: 0px;
     background-color: white;
     border-bottom: 2px solid rgb(250, 229, 229);
@@ -45,7 +46,21 @@
         display: none;
     }
 }
-
+@media(max-width:1550px){
+    .header_main_sticky{
+        width: 100%;
+    }
+}@media(max-width:650px){
+    .header_main_sticky{
+        /* display: none; */
+        height: 160px;
+    }
+}@media(max-width:450px){
+    .header_main_sticky{
+        /* display: none; */
+        height: 150px;
+    }
+}
 @keyframes menu{
     0%{
         margin-left: -250px;
